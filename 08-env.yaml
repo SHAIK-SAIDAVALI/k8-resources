@@ -1,0 +1,14 @@
+apiversion: v1
+kind: pod
+Metadata:
+  name: env-demo
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: course
+      value: k8s
+    - project: env
+      value: demo
+  
