@@ -19,9 +19,9 @@ metadata:
   name: multi-container-pod
   namespace: roboshop
   labels:
-  name: multi-container-pod
-  project: roboshop
-  environment: development
+    name: multi-container-pod
+    project: roboshop
+    environment: development
 
 spec:
   containers:
