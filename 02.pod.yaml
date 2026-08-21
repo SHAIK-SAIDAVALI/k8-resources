@@ -12,3 +12,20 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
+
+---
+apiversion: v1
+kind: Pod
+Metadata:
+  name: nginx
+  namespace: roboshop
+  labels:
+  project: roboshop
+  environment: development
+
+  spec:
+    containers:
+      name: nginx
+      image: nginx:latest
+      ports:
+       - containerPort: 8080
