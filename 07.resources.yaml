@@ -15,4 +15,4 @@ spec:
       # hard limit
       limits:
         memory: "100Mi"
-        cpu: "120m"
+        cpu: "220m"
