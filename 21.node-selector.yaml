@@ -7,7 +7,8 @@ metadata:
     name: nginx
     project: roboshop
 spec:
-  nodeName: ip-192-168-21-104.ec2.internal
+  nodeSelector:
+    env: production 
   containers:
   - name: nginx
     image: nginx
