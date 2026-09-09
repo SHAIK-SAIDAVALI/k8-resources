@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: manual-scheduled-pod
+  name: node-selector-pod
   namespace: roboshop
   labels:
-    name: nginx
-    project: roboshop
+    name: env
+    project: production
 spec:
   nodeSelector:
     env: production 
