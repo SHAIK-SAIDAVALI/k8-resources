@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-with-toleration
+  namespace: roboshop
+spec:
+  tolerations:
+    - key: "server"
+      operator: "equal"
+      value: "database"
+      effect: "NoSchedule"
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
