@@ -4,6 +4,8 @@ metadata:
   name: pod-with-toleration
   namespace: roboshop
 spec:
+  nodeSelector:
+    env: production
   tolerations:
     - key: "server"
       operator: "Equal"
